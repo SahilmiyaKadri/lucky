@@ -4,11 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
+    <style>
+        /* Set body and html to full height to ensure iframe takes the full viewport */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Make iframe responsive */
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+            /* Ensure no scrollbar appears */
+            overflow: hidden;
+        }
+    </style>
 </head>
-<body style="margin: 0; padding: 0; overflow: hidden;">
+<body>
     <iframe 
         src="https://menu.tmbill.com/digimenu/19122" 
-        style="width: 100vw; height: 100vh; border: none;">
+        title="Menu">
     </iframe>
 </body>
 </html>
