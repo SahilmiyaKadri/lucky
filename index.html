@@ -3,30 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu</title>
+    <title>Welcome to Our Menu</title>
     <style>
-        /* Set body and html to full height to ensure iframe takes the full viewport */
-        html, body {
-            height: 100%;
+        body {
             margin: 0;
-            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f7f7f7;
         }
-
-        /* Make iframe responsive */
-        iframe {
-            width: 100%;
-            height: 100%;
+        .container {
+            text-align: center;
+            background: #ffffff;
+            padding: 30px 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        p {
+            margin-bottom: 30px;
+            color: #666;
+        }
+        .order-button {
+            background-color: #007bff;
+            color: #ffffff;
             border: none;
-            display: block;
-            /* Ensure no scrollbar appears */
-            overflow: hidden;
+            padding: 15px 30px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .order-button:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
-    <iframe 
-        src="https://menu.tmbill.com/digimenu/19122" 
-        title="Menu">
-    </iframe>
+    <div class="container">
+        <h1>Welcome to Our Restaurant!</h1>
+        <p>Explore our delicious menu and place your order with just a click.</p>
+        <button class="order-button" onclick="location.href='https://sk.imsaaahil2-2b3.workers.dev'">
+            Order Now!
+        </button>
+    </div>
 </body>
 </html>
